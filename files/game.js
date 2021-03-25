@@ -1,5 +1,5 @@
 let wordList = [ "other", "aussie broadband", "new", "good", "high", "old", "great", "big", "American", "small", "large", "national", "young", "different", "black", "long", "little", "important", "political", "bad", "white", "real", "best", "right", "social", "only", "public", "sure", "low", "early", "able", "human", "local", "late", "hard", "major", "better", "economic", "strong", "possible", "whole", "free", "military", "true", "federal", "international", "full", "special", "easy", "clear", "recent", "certain", "personal", "open", "red", "difficult", "available", "likely", "short", "single", "medical", "current", "wrong", "private", "past", "foreign", "fine", "common", "poor", "natural", "significant", "similar", "hot", "dead", "central", "happy", "serious", "ready", "simple", "left", "physical", "general", "environmental", "financial", "blue", "democratic", "dark", "various", "entire", "close", "legal", "religious", "cold", "final", "main", "green", "nice", "huge", "popular", "traditional", "cultural" ];
-wordlist = ["aussie broadband"];
+
 let chances = 6;
 
 let score = 0;
@@ -7,7 +7,7 @@ let allGuesses, wrongGuesses, finish, guessCount, currentWord, currentArray;
 
 let newGame = () => {
     //Get new word and setup array
-    currentWord = "Aussie Broadband";//wordList[Math.floor(Math.random()*wordList.length)];
+    currentWord = wordList[Math.floor(Math.random()*wordList.length)];
     currentArray = [];
     for(let index in currentWord){
         currentArray[index] = (validKey(currentWord[index]))?"":currentWord[index];
