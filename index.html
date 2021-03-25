@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="files/game.css" media="screen"/>
+    <script src="files/game.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman - ABB Dev School</title>
+</head>
+<body>
+    
+    <div class="gameboard">
+        <div class="screenmodal">
+            <div class="innerdisplay">
+                <h1>Hangman</h1>
+                <h2>ABB Dev School</h2>
+                <p>Score: <span class="score"></span></p>
+                <p><h1 class="winner">A winner is you.</h1><h1 class="loser">Try again later!<br />The word was: <span class="wordwas"></span></h1></p>
+                <button id="new_game" onclick="newGame();">New Game</button>
+            </div>
+        </div>
+        <header class="display">
+            <h1>ABB Dev School - Hangman</h1>
+            <p> Remaining Guesses: <span class="chances"></span></p>
+        </header>
+        <div class="container">
+            <div class="left">
+                <div class="guess"></div>
+                <div class="wrongguess"></div>
+                <div class="controls"></div>
+            </div>
+            <div class="svg">
+                <svg height="250" width="160" stroke="#78BE20" fill="transparent">
+                    <!--  Gallows  -->
+                    <line class="attempt1" x1="60" y1="20" x2="60" y2="230"/>
+                    <line class="attempt1" x1="20" y1="230" x2="180" y2="230"/>
+                    <line class="attempt1" x1="20" y1="20" x2="140" y2="20"/>
+                    <line class="attempt1" x1="140" y1="20" x2="140" y2="50"/>
+                    <!--  Head  -->
+                    <circle class="attempt2" cx="140" cy="70" r="20"/>
+                    <!--  Open Eyes  -->
+                    <circle class="attempt2_eye" cx="147.5" cy="67.5" r="3"/>
+                    <circle class="attempt2_eye" cx="132.5" cy="67.5" r="3"/>
+                    <!--  Dead Eyes  -->
+                    <line class="attempt6" x1="150" y1="70" x2="145" y2="65"/>
+                    <line class="attempt6" x1="150" y1="65" x2="145" y2="70"/>
+                    <line class="attempt6" x1="130" y1="65" x2="135" y2="70"/>
+                    <line class="attempt6" x1="130" y1="70" x2="135" y2="65"/>
+                    <!--  Body  -->
+                    <line class="attempt3" x1="140" y1="90" x2="140" y2="150"/>
+                    <!--  Arms  -->
+                    <line class="attempt4" x1="140" y1="120" x2="120" y2="100"/>
+                    <line class="attempt4" x1="140" y1="120" x2="160" y2="100"/>
+                    <!--  Legs  -->
+                    <line class="attempt5" x1="140" y1="150" x2="120" y2="180"/>
+                    <line class="attempt5" x1="140" y1="150" x2="160" y2="180"/>
+                    </svg>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
