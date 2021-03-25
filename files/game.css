@@ -1,0 +1,73 @@
+.controls {
+    width: 400px;
+    margin: 1px auto;
+}
+.controls button, .controls .spacer {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.25rem;
+    display: inline-block;
+}
+.controls > div {
+    text-align: center;
+    width: 100%;
+}
+.guess, .wrongguess{
+    width: 700px;
+    margin: 1px auto;
+    text-align: center;
+}
+.wrongguess {
+    color: red;
+    height: 1em;
+}
+.character {
+    text-transform: capitalize;
+    font-size: 2em;
+    width: 1em;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 4px solid rebeccapurple;
+    margin: 4px;
+    display: inline-block;
+}
+.svg{
+    width: 160px;
+    height: 250px;
+}
+svg{
+    transform: scaleX(-1);
+    position: relative;
+    z-index: -1;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    width: 700px;
+}
+.screenmodal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.innerdisplay{
+    text-align: center;
+    width: 600px;
+    padding: 0 0 2rem 0;
+    margin: 10px auto;
+    background-color: aliceblue;
+}
+.winner, .loser{
+    display: "none";   
+}
+.winner{
+    color: green;
+}
+.loser{
+    color:red;
+}
